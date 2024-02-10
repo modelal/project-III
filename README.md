@@ -24,27 +24,15 @@ People want:
 - APROACH: Que cumplan todas estas - quiza dentro de cada una podemos decir que umplan 1 o otra 
 
 **MAINTENANCE**
-- 1. buscar los estadios de basket. 
-     10061	Arts and Entertainment > Stadium > Basketball Stadium -- PREFERIBLE - ver cuantos
-     18008	Sports and Recreation > Basketball > Basketball Court - OPCION B 
-     18007	Sports and Recreation > Basketball > Basketball Club -- OPCION C
-     
-- 2. Por cada punto de los anteriores -------------
-        - sacar todos los X (lo de abajo) 
-        - Ver cuantos i de hay de cada uno de estos 
-                Ej: Dogs parks este punto tiene 10 
-                Ej: Veganos tiene 20 
-- 3. Definir cuales son los hot spot de estos -- mapa de calor ? 
-                
-
+- 1. buscar los estadios deportes en general 
+     10051	Arts and Entertainment > Stadium
+          
 **DOG PARK**
     - Dog park
         16033	Landmarks and Outdoors > Park > Dog Park
 **CEO**
     - Vegan o X restaurant (Opciones)
         13377	Dining and Drinking > Restaurant > Vegan and Vegetarian Restaurant
-        13072	Dining and Drinking > Restaurant > Asian Restaurant
-        13099	Dining and Drinking > Restaurant > Asian Restaurant > Chinese Restaurant
 
 **PARTY**
 

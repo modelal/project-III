@@ -1,0 +1,1292 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ed884ca8d682a959c6fa97e4b933e780 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ed884ca8d682a959c6fa97e4b933e780" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ed884ca8d682a959c6fa97e4b933e780 = L.map(
+                "map_ed884ca8d682a959c6fa97e4b933e780",
+                {
+                    center: [43.3622115, -5.8490144],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_810a5acfdf9129e50e325d891ce6b4c5 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_810a5acfdf9129e50e325d891ce6b4c5.addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var marker_49d69c2a11d90c7906630c8d207fd47a = L.marker(
+                [43.35642, -5.851475],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_14c1a96fc3e4c6f25da6b30b6f2f7fb4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "baseball", "iconColor": "black", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_49d69c2a11d90c7906630c8d207fd47a.setIcon(icon_14c1a96fc3e4c6f25da6b30b6f2f7fb4);
+        
+    
+            marker_49d69c2a11d90c7906630c8d207fd47a.bindTooltip(
+                `<div>
+                     Estadio Universitario CAU
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8441098d62601d0510a19f61d4ec8c72 = L.marker(
+                [43.359213, -5.85581],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_00da7e9fad31024fd9e0c8da49d8ab9d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "baseball", "iconColor": "black", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8441098d62601d0510a19f61d4ec8c72.setIcon(icon_00da7e9fad31024fd9e0c8da49d8ab9d);
+        
+    
+            marker_8441098d62601d0510a19f61d4ec8c72.bindTooltip(
+                `<div>
+                     Registro de la Consejeria de Ciencia, Innovacion y Universidad
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_38c64d3b11da2305884a13e1a3d5ff7c = L.marker(
+                [43.354788, -5.851343],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_34f6c064e90eba39e196fa2134852395 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "baseball", "iconColor": "black", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_38c64d3b11da2305884a13e1a3d5ff7c.setIcon(icon_34f6c064e90eba39e196fa2134852395);
+        
+    
+            marker_38c64d3b11da2305884a13e1a3d5ff7c.bindTooltip(
+                `<div>
+                     Escuela Universitaria de Ingeniería Técnica en Informática de Oviedo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f9d81c47e4ce8e02016b0269271521ca = L.marker(
+                [43.358509, -5.855382],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_230c7cd9ee6f46dfab701d7d387c5853 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "baseball", "iconColor": "black", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f9d81c47e4ce8e02016b0269271521ca.setIcon(icon_230c7cd9ee6f46dfab701d7d387c5853);
+        
+    
+            marker_f9d81c47e4ce8e02016b0269271521ca.bindTooltip(
+                `<div>
+                     Cafetería Universidad de Geología
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f403dca16dbae37b3893329ccb8e625d = L.marker(
+                [43.376087, -5.827319],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_d374ed71623fbe6b198c3fde8a0fc8ad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "baseball", "iconColor": "black", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f403dca16dbae37b3893329ccb8e625d.setIcon(icon_d374ed71623fbe6b198c3fde8a0fc8ad);
+        
+    
+            marker_f403dca16dbae37b3893329ccb8e625d.bindTooltip(
+                `<div>
+                     Registro auxiliar Area Sanitaria IV de Oviedo en el Hospital Universitario Central de Asturias
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_184a8517c1c8a41e44e7ca80f0450f7c = L.marker(
+                [43.375317, -5.827111],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_99ac211faae1c8ee6bbd393c5f95e5ef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "baseball", "iconColor": "black", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_184a8517c1c8a41e44e7ca80f0450f7c.setIcon(icon_99ac211faae1c8ee6bbd393c5f95e5ef);
+        
+    
+            marker_184a8517c1c8a41e44e7ca80f0450f7c.bindTooltip(
+                `<div>
+                     Hospital Universitario Central de Asturias
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6c536baf5d43182cfd325dc3b68532b2 = L.marker(
+                [43.356522, -5.870775],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_2beb404692ea8a5f888f88a06ffd1865 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "baseball", "iconColor": "black", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6c536baf5d43182cfd325dc3b68532b2.setIcon(icon_2beb404692ea8a5f888f88a06ffd1865);
+        
+    
+            marker_6c536baf5d43182cfd325dc3b68532b2.bindTooltip(
+                `<div>
+                     Facultad de Medicina - Universidad de Oviedo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4feb644fb7243c8dd9d36424056eb1e7 = L.marker(
+                [43.356114, -5.875639],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_5ed626dc6f5d581032d1c47610ab5895 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "baseball", "iconColor": "black", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4feb644fb7243c8dd9d36424056eb1e7.setIcon(icon_5ed626dc6f5d581032d1c47610ab5895);
+        
+    
+            marker_4feb644fb7243c8dd9d36424056eb1e7.bindTooltip(
+                `<div>
+                     Escuela de Empresariales Universidad d Oviedo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c37671755e7949d5ceb5f2d85fab6fe1 = L.marker(
+                [43.362198, -5.846162],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_000644ae6f4f8ee6af699cca30d1a2aa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "baseball", "iconColor": "black", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c37671755e7949d5ceb5f2d85fab6fe1.setIcon(icon_000644ae6f4f8ee6af699cca30d1a2aa);
+        
+    
+            marker_c37671755e7949d5ceb5f2d85fab6fe1.bindTooltip(
+                `<div>
+                     Biblioteca de la Universidad de Oviedo Biblioteca de la Universidad de Oviedo Biblioteca Central
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a4b3a7da8bb6b5f4018888a85c29b7b2 = L.marker(
+                [43.36216, -5.84642],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_33ec347556f4626a33405985141b5445 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "baseball", "iconColor": "black", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a4b3a7da8bb6b5f4018888a85c29b7b2.setIcon(icon_33ec347556f4626a33405985141b5445);
+        
+    
+            marker_a4b3a7da8bb6b5f4018888a85c29b7b2.bindTooltip(
+                `<div>
+                     Escuela Universitaria de Estudios Empresariales
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f7002149b329c1773a99e21b40e52394 = L.marker(
+                [43.36216, -5.84642],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_7efac5c8a3f77fe1227588bfce40d803 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "baseball", "iconColor": "black", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f7002149b329c1773a99e21b40e52394.setIcon(icon_7efac5c8a3f77fe1227588bfce40d803);
+        
+    
+            marker_f7002149b329c1773a99e21b40e52394.bindTooltip(
+                `<div>
+                     Universidad de Oviedo Sección Relaciones Institucionales
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_700bf902e1a4fdc8b697c7f162e123f3 = L.marker(
+                [43.361751, -5.846352],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_013bd671abfbe584fcd15a8b48160e68 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "baseball", "iconColor": "black", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_700bf902e1a4fdc8b697c7f162e123f3.setIcon(icon_013bd671abfbe584fcd15a8b48160e68);
+        
+    
+            marker_700bf902e1a4fdc8b697c7f162e123f3.bindTooltip(
+                `<div>
+                     Universidad de Oviedo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_af9e3e27bfbd11e6883345428ebef998 = L.marker(
+                [43.36176, -5.847557],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_af7e80049c89d3f1f48d1e979d9d64e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "baseball", "iconColor": "black", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_af9e3e27bfbd11e6883345428ebef998.setIcon(icon_af7e80049c89d3f1f48d1e979d9d64e6);
+        
+    
+            marker_af9e3e27bfbd11e6883345428ebef998.bindTooltip(
+                `<div>
+                     Universidad de Oviedo Sección Ayudas al Estudiante
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4a0e972f3d3d0e65cc7c4b5856ed3640 = L.marker(
+                [43.36176, -5.847557],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_96fff6ebff6af1f10c1eb0296c1ee9d5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "baseball", "iconColor": "black", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4a0e972f3d3d0e65cc7c4b5856ed3640.setIcon(icon_96fff6ebff6af1f10c1eb0296c1ee9d5);
+        
+    
+            marker_4a0e972f3d3d0e65cc7c4b5856ed3640.bindTooltip(
+                `<div>
+                     Universidad de Oviedo Vicedecanato
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_92c0b85154bcdda6c37924247012a0ea = L.marker(
+                [43.36176, -5.847557],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_9215f5c882838ec9d9f458ec3f47c723 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "baseball", "iconColor": "black", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_92c0b85154bcdda6c37924247012a0ea.setIcon(icon_9215f5c882838ec9d9f458ec3f47c723);
+        
+    
+            marker_92c0b85154bcdda6c37924247012a0ea.bindTooltip(
+                `<div>
+                     Universidad de Oviedo Departamento Explo y Porsp de Minas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f106d1f9af9699f69c9ae99b1d96ec1c = L.marker(
+                [43.36176, -5.847557],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_d2491e3b9f5898a5289aa5d8e4f028d5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "baseball", "iconColor": "black", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f106d1f9af9699f69c9ae99b1d96ec1c.setIcon(icon_d2491e3b9f5898a5289aa5d8e4f028d5);
+        
+    
+            marker_f106d1f9af9699f69c9ae99b1d96ec1c.bindTooltip(
+                `<div>
+                     Universidad de Oviedo Aulario-Conserjeria
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fd9cfc2def3deef7d2a899dd9716f2c9 = L.marker(
+                [43.36176, -5.847557],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_b451463d2fd171daa068621f98be7233 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "baseball", "iconColor": "black", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fd9cfc2def3deef7d2a899dd9716f2c9.setIcon(icon_b451463d2fd171daa068621f98be7233);
+        
+    
+            marker_fd9cfc2def3deef7d2a899dd9716f2c9.bindTooltip(
+                `<div>
+                     Universidad de Oviedo Edificio Depart-Conserj Camp
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b68391252012495c9b6a3961f2138184 = L.marker(
+                [43.36176, -5.847557],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_27f1a6d9267625b9c0474998fa4087ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "baseball", "iconColor": "black", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b68391252012495c9b6a3961f2138184.setIcon(icon_27f1a6d9267625b9c0474998fa4087ab);
+        
+    
+            marker_b68391252012495c9b6a3961f2138184.bindTooltip(
+                `<div>
+                     Universidad de Oviedo Departamento Cienc Mat e Ing Metalurg
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cf7828ab5a9312107e44a68201a7d112 = L.marker(
+                [43.36176, -5.847557],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_268d569cec12b27726ecb4c4bcf986a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "baseball", "iconColor": "black", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_cf7828ab5a9312107e44a68201a7d112.setIcon(icon_268d569cec12b27726ecb4c4bcf986a6);
+        
+    
+            marker_cf7828ab5a9312107e44a68201a7d112.bindTooltip(
+                `<div>
+                     Universidad de Oviedo Departamento Fil Anglos y Francesa
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7d5603e7612269fb688a2f663d1009bd = L.marker(
+                [43.36176, -5.847557],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_4b6541fd43ecc83aaa69616dd07e59a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "baseball", "iconColor": "black", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7d5603e7612269fb688a2f663d1009bd.setIcon(icon_4b6541fd43ecc83aaa69616dd07e59a8);
+        
+    
+            marker_7d5603e7612269fb688a2f663d1009bd.bindTooltip(
+                `<div>
+                     Universidad de Oviedo Sección Reclamacion Recursos y Registro
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c8b098a0bb814986fedb89acc23b4967 = L.marker(
+                [43.36176, -5.847557],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_dc26a1197fd5dece1c53da322965a0b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "baseball", "iconColor": "black", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c8b098a0bb814986fedb89acc23b4967.setIcon(icon_dc26a1197fd5dece1c53da322965a0b4);
+        
+    
+            marker_c8b098a0bb814986fedb89acc23b4967.bindTooltip(
+                `<div>
+                     Universidad de Oviedo Departamento Morf y Biol Celular
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_34ca41dcbe00ff6343bcae08a87e6f26 = L.marker(
+                [43.36176, -5.847557],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_6423319d6ad5dfbc9991830bffe575cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "baseball", "iconColor": "black", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_34ca41dcbe00ff6343bcae08a87e6f26.setIcon(icon_6423319d6ad5dfbc9991830bffe575cd);
+        
+    
+            marker_34ca41dcbe00ff6343bcae08a87e6f26.bindTooltip(
+                `<div>
+                     Universidad de Oviedo Sección Gestión Personal Docente e Investicacion
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0d74d7ddc959a51f7b109181b1a785f6 = L.marker(
+                [43.36176, -5.847557],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_63ee1fe03bd026eee91b1c6ebbfe513d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "baseball", "iconColor": "black", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0d74d7ddc959a51f7b109181b1a785f6.setIcon(icon_63ee1fe03bd026eee91b1c6ebbfe513d);
+        
+    
+            marker_0d74d7ddc959a51f7b109181b1a785f6.bindTooltip(
+                `<div>
+                     Universidad de Oviedo Departamento Economía Cuantitativa
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b4c23065619c6ca9f0c36ed83b474bce = L.marker(
+                [43.36176, -5.847557],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_a94203a11b5d5b9db4cab9ddcc2570eb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "baseball", "iconColor": "black", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b4c23065619c6ca9f0c36ed83b474bce.setIcon(icon_a94203a11b5d5b9db4cab9ddcc2570eb);
+        
+    
+            marker_b4c23065619c6ca9f0c36ed83b474bce.bindTooltip(
+                `<div>
+                     Universidad de Oviedo Departamento Cc Jurídicas Básicas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_768e724f106a8c8e69f6ddd30a547be3 = L.marker(
+                [43.36176, -5.847557],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_dfcc7d9ed8d1697841377342b2446ab3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "baseball", "iconColor": "black", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_768e724f106a8c8e69f6ddd30a547be3.setIcon(icon_dfcc7d9ed8d1697841377342b2446ab3);
+        
+    
+            marker_768e724f106a8c8e69f6ddd30a547be3.bindTooltip(
+                `<div>
+                     Universidad de Oviedo Departamento Química Organica e Inorganica
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1f38ab78d6fec5a02af2a8b9d1c9d73e = L.marker(
+                [43.36176, -5.847557],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_c9bbdcc3396ba5f2973933fd82283113 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "baseball", "iconColor": "black", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1f38ab78d6fec5a02af2a8b9d1c9d73e.setIcon(icon_c9bbdcc3396ba5f2973933fd82283113);
+        
+    
+            marker_1f38ab78d6fec5a02af2a8b9d1c9d73e.bindTooltip(
+                `<div>
+                     Universidad de Oviedo Primeras Visitas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5794a72384c71c7dbf656ac34ba0e5be = L.marker(
+                [43.360983, -5.847637],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_ff98d4642e1a42bbaca7664f2b66f9a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "baseball", "iconColor": "black", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5794a72384c71c7dbf656ac34ba0e5be.setIcon(icon_ff98d4642e1a42bbaca7664f2b66f9a6);
+        
+    
+            marker_5794a72384c71c7dbf656ac34ba0e5be.bindTooltip(
+                `<div>
+                     Universidad de Oviedo Centro de Procesos de Datos
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0dde915c9ef78c83b94bb73011407f76 = L.marker(
+                [43.360983, -5.847637],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_7d18dc5b9f22ffc4af6baca8bbfe44e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "baseball", "iconColor": "black", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0dde915c9ef78c83b94bb73011407f76.setIcon(icon_7d18dc5b9f22ffc4af6baca8bbfe44e7);
+        
+    
+            marker_0dde915c9ef78c83b94bb73011407f76.bindTooltip(
+                `<div>
+                     Fundacion Universidad Oviedo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9f46c43720d732ee3e90e895f12f29c7 = L.marker(
+                [43.367471, -5.839843],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_190ac9a152de99eafb88a78f2e0e7972 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "baseball", "iconColor": "black", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9f46c43720d732ee3e90e895f12f29c7.setIcon(icon_190ac9a152de99eafb88a78f2e0e7972);
+        
+    
+            marker_9f46c43720d732ee3e90e895f12f29c7.bindTooltip(
+                `<div>
+                     Facultad de Geografia e Historia - Universidad de Oviedo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a58c2e927af48323f4b35984c649667f = L.marker(
+                [43.358068, -5.854351],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_7c06826f913f4f0636d6ce783706586d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "baseball", "iconColor": "black", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a58c2e927af48323f4b35984c649667f.setIcon(icon_7c06826f913f4f0636d6ce783706586d);
+        
+    
+            marker_a58c2e927af48323f4b35984c649667f.bindTooltip(
+                `<div>
+                     Facultad y Departamento de Geología de la Universidad de Oviedo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1925f24c7d0d0ab8e81a59a75f2160e8 = L.marker(
+                [43.364985, -5.855445],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_8d73488a33dee0006be59a88cd5c2423 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "baseball", "iconColor": "black", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1925f24c7d0d0ab8e81a59a75f2160e8.setIcon(icon_8d73488a33dee0006be59a88cd5c2423);
+        
+    
+            marker_1925f24c7d0d0ab8e81a59a75f2160e8.bindTooltip(
+                `<div>
+                     Academia Universitaria
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4ed63d013d6581c4fed3f3d4145dae6c = L.marker(
+                [43.357202, -5.854225],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_7a7516eac18f2daef8ca0105cf2f696d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "baseball", "iconColor": "black", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4ed63d013d6581c4fed3f3d4145dae6c.setIcon(icon_7a7516eac18f2daef8ca0105cf2f696d);
+        
+    
+            marker_4ed63d013d6581c4fed3f3d4145dae6c.bindTooltip(
+                `<div>
+                     Universidad de Oviedo-Facultadde Filosofía y Ciencias de la e
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7c300f5979b4881fc6fca20f3f9dd14a = L.marker(
+                [43.368421, -5.86187],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_8106ba2e87cec1b2f6e33d8db25055a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "baseball", "iconColor": "black", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7c300f5979b4881fc6fca20f3f9dd14a.setIcon(icon_8106ba2e87cec1b2f6e33d8db25055a6);
+        
+    
+            marker_7c300f5979b4881fc6fca20f3f9dd14a.bindTooltip(
+                `<div>
+                     Escuela Universitaria de Turismo de Asturias
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8c6bfc9ee86d711a412837ed1894509d = L.marker(
+                [43.354918, -5.863509],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_341e74ae3c7ef33cb31f2bffd7c8b618 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "baseball", "iconColor": "black", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8c6bfc9ee86d711a412837ed1894509d.setIcon(icon_341e74ae3c7ef33cb31f2bffd7c8b618);
+        
+    
+            marker_8c6bfc9ee86d711a412837ed1894509d.bindTooltip(
+                `<div>
+                     Universidad de Oviedo-Facultadde Geografia e Historia y Cie
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_96c8d346b0d431642b1d1ec29c4b0b25 = L.marker(
+                [43.356639, -5.873641],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_f2eeb8198be83f19f58a39f3bee93675 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "baseball", "iconColor": "black", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_96c8d346b0d431642b1d1ec29c4b0b25.setIcon(icon_f2eeb8198be83f19f58a39f3bee93675);
+        
+    
+            marker_96c8d346b0d431642b1d1ec29c4b0b25.bindTooltip(
+                `<div>
+                     Escuela Universitaria de Relaciones Laborales
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d6d76637014f77bcb9476fe072675bd4 = L.marker(
+                [43.374646, -5.809664],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_d768bc25d523f9014e70d3a9227b7be5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "baseball", "iconColor": "black", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d6d76637014f77bcb9476fe072675bd4.setIcon(icon_d768bc25d523f9014e70d3a9227b7be5);
+        
+    
+            marker_d6d76637014f77bcb9476fe072675bd4.bindTooltip(
+                `<div>
+                     Oxford University Press
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_09738207a799d37323138a90f906f842 = L.marker(
+                [43.362701, -5.847166],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_f8ea3c323c003d7be4b86517488d3c62 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "baseball", "iconColor": "black", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_09738207a799d37323138a90f906f842.setIcon(icon_f8ea3c323c003d7be4b86517488d3c62);
+        
+    
+            marker_09738207a799d37323138a90f906f842.bindTooltip(
+                `<div>
+                     Rebarco
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_02bbd9f2050e1cb86613fe82e12a31e6 = L.marker(
+                [43.360162, -5.844741],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_c1ea9d2b5ebe780180d9310de9a35711 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "baseball", "iconColor": "black", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_02bbd9f2050e1cb86613fe82e12a31e6.setIcon(icon_c1ea9d2b5ebe780180d9310de9a35711);
+        
+    
+            marker_02bbd9f2050e1cb86613fe82e12a31e6.bindTooltip(
+                `<div>
+                     Cantera el Orgaleyo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a31c58153cc96af6704c8f664f9df645 = L.marker(
+                [43.366062, -5.854107],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_ae0accfcc1bc90627c1703aeaeca6945 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "baseball", "iconColor": "black", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a31c58153cc96af6704c8f664f9df645.setIcon(icon_ae0accfcc1bc90627c1703aeaeca6945);
+        
+    
+            marker_a31c58153cc96af6704c8f664f9df645.bindTooltip(
+                `<div>
+                     Caolines de la Espina
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3c66447fc805ccdc8ca17b1fbd7e2416 = L.marker(
+                [43.364799, -5.856737],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_f0e048cb7bef4e148678905de63e116f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "baseball", "iconColor": "black", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3c66447fc805ccdc8ca17b1fbd7e2416.setIcon(icon_f0e048cb7bef4e148678905de63e116f);
+        
+    
+            marker_3c66447fc805ccdc8ca17b1fbd7e2416.bindTooltip(
+                `<div>
+                     Campo el Castañeo San Claudio
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3683b332be851d6172ef313df7c68536 = L.marker(
+                [43.362694, -5.859472],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_fa43fad27afdc5040fee8ae8ac544e3d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "baseball", "iconColor": "black", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3683b332be851d6172ef313df7c68536.setIcon(icon_fa43fad27afdc5040fee8ae8ac544e3d);
+        
+    
+            marker_3683b332be851d6172ef313df7c68536.bindTooltip(
+                `<div>
+                     Polideportivo del Centro Asturiano
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e7774f879a2c1a3f749bf680687aefbe = L.marker(
+                [43.36979, -5.845841],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_23be0b968afb072af0a955289651caf2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "baseball", "iconColor": "black", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e7774f879a2c1a3f749bf680687aefbe.setIcon(icon_23be0b968afb072af0a955289651caf2);
+        
+    
+            marker_e7774f879a2c1a3f749bf680687aefbe.bindTooltip(
+                `<div>
+                     Oviedo Club Baloncesto
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_03a3a5210713a3996b3257b04f314356 = L.marker(
+                [43.362057, -5.836508],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_3d117815ccd47b72946438346027f1c1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "baseball", "iconColor": "black", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_03a3a5210713a3996b3257b04f314356.setIcon(icon_3d117815ccd47b72946438346027f1c1);
+        
+    
+            marker_03a3a5210713a3996b3257b04f314356.bindTooltip(
+                `<div>
+                     Polideportivo municipal fozaneldi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_999ea49ccebfa011334d61f2587cf164 = L.marker(
+                [43.352261, -5.848023],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_c0f82a99084936818580df0dc7114a62 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "baseball", "iconColor": "black", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_999ea49ccebfa011334d61f2587cf164.setIcon(icon_c0f82a99084936818580df0dc7114a62);
+        
+    
+            marker_999ea49ccebfa011334d61f2587cf164.bindTooltip(
+                `<div>
+                     Complejo Deportivo San Lázaro
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_20cb298d175a5a963e9eddb04cc362db = L.marker(
+                [43.373354, -5.854562],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_318d4078e11e9e95281f3c1c3f1892fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "baseball", "iconColor": "black", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_20cb298d175a5a963e9eddb04cc362db.setIcon(icon_318d4078e11e9e95281f3c1c3f1892fe);
+        
+    
+            marker_20cb298d175a5a963e9eddb04cc362db.bindTooltip(
+                `<div>
+                     béisbol Naranco
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_480d264a2fbc13042317c780ef21303b = L.marker(
+                [43.360208, -5.86659],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_eeb415a998e1a6a8c55e395424bf5809 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "baseball", "iconColor": "black", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_480d264a2fbc13042317c780ef21303b.setIcon(icon_eeb415a998e1a6a8c55e395424bf5809);
+        
+    
+            marker_480d264a2fbc13042317c780ef21303b.bindTooltip(
+                `<div>
+                     Cau Pista de Atletismo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_66d51bb72d4bb774e5e5a10c893cd693 = L.marker(
+                [43.369784, -5.863889],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_776123dddfbcee3e6de5408beb8c0217 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "baseball", "iconColor": "black", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_66d51bb72d4bb774e5e5a10c893cd693.setIcon(icon_776123dddfbcee3e6de5408beb8c0217);
+        
+    
+            marker_66d51bb72d4bb774e5e5a10c893cd693.bindTooltip(
+                `<div>
+                     Campo de Futbol de Vallobin
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5e7ccaecfde06ae37d89923596389b34 = L.marker(
+                [43.362785, -5.870281],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_97976e11b7269bc5081458c2434ddefd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "baseball", "iconColor": "black", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5e7ccaecfde06ae37d89923596389b34.setIcon(icon_97976e11b7269bc5081458c2434ddefd);
+        
+    
+            marker_5e7ccaecfde06ae37d89923596389b34.bindTooltip(
+                `<div>
+                     Campo Hermanos Llana
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_496375feedc11e38bda0eb0843e5f88a = L.marker(
+                [43.360789, -5.870219],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_a39641a40244ff93cbc1c2c456dfb3b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "baseball", "iconColor": "black", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_496375feedc11e38bda0eb0843e5f88a.setIcon(icon_a39641a40244ff93cbc1c2c456dfb3b3);
+        
+    
+            marker_496375feedc11e38bda0eb0843e5f88a.bindTooltip(
+                `<div>
+                     Estadio Carlos Tartiere
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a93c7d6019df381522eb2d38c2c2b79f = L.marker(
+                [43.359872, -5.870033],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_cc5e19e84c630c56f19d4bc68c8138d2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "baseball", "iconColor": "black", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a93c7d6019df381522eb2d38c2c2b79f.setIcon(icon_cc5e19e84c630c56f19d4bc68c8138d2);
+        
+    
+            marker_a93c7d6019df381522eb2d38c2c2b79f.bindTooltip(
+                `<div>
+                     Carlos Tartiere
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4bc2105c5f6a6d53aa429303ce92e7bd = L.marker(
+                [43.372094, -5.827804],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_32dff5bb381b74bebcfa95f88b9353ad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "baseball", "iconColor": "black", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4bc2105c5f6a6d53aa429303ce92e7bd.setIcon(icon_32dff5bb381b74bebcfa95f88b9353ad);
+        
+    
+            marker_4bc2105c5f6a6d53aa429303ce92e7bd.bindTooltip(
+                `<div>
+                     Complejo Deportivo Jorge Egocheaga
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c16c98214ed0f2c1d876e0d396dd8463 = L.marker(
+                [43.36584, -5.874841],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_8b7d6b23b13c683f06c33c4286563ef7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "baseball", "iconColor": "black", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c16c98214ed0f2c1d876e0d396dd8463.setIcon(icon_8b7d6b23b13c683f06c33c4286563ef7);
+        
+    
+            marker_c16c98214ed0f2c1d876e0d396dd8463.bindTooltip(
+                `<div>
+                     Polideportivo Florida Arena
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f4ea2bb06a31d6b0404375ef0f2dce65 = L.marker(
+                [43.382136, -5.823143],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_06710d5484f29e557be14c633fb891f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "baseball", "iconColor": "black", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f4ea2bb06a31d6b0404375ef0f2dce65.setIcon(icon_06710d5484f29e557be14c633fb891f6);
+        
+    
+            marker_f4ea2bb06a31d6b0404375ef0f2dce65.bindTooltip(
+                `<div>
+                     Polideportivo Corredoria Arena
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7a131d0e86d0055154f547ffa0a59837 = L.marker(
+                [43.383156, -5.818104],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_8142fcd08b22028fa172c51d796e04ad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "baseball", "iconColor": "black", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7a131d0e86d0055154f547ffa0a59837.setIcon(icon_8142fcd08b22028fa172c51d796e04ad);
+        
+    
+            marker_7a131d0e86d0055154f547ffa0a59837.bindTooltip(
+                `<div>
+                     Polideportivo Municipal la Carisa
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_de6aa218a632a195c367125b81dfddfe = L.marker(
+                [43.354359, -5.8584],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_60df7a33149c5752fef67704c75d4864 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "dog", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_de6aa218a632a195c367125b81dfddfe.setIcon(icon_60df7a33149c5752fef67704c75d4864);
+        
+    
+            marker_de6aa218a632a195c367125b81dfddfe.bindTooltip(
+                `<div>
+                     Montecerrao
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_313009827bae3d64a9bcf1da4dd501d1 = L.marker(
+                [43.352675, -5.839839],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_bb7d34b07bb9d3ebc043549bef98d4da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "dog", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_313009827bae3d64a9bcf1da4dd501d1.setIcon(icon_bb7d34b07bb9d3ebc043549bef98d4da);
+        
+    
+            marker_313009827bae3d64a9bcf1da4dd501d1.bindTooltip(
+                `<div>
+                     Zona de Paseo de Perros de Villafria
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f1623d355e7ff54871ca302b3c8a6fd3 = L.marker(
+                [43.369494, -5.875672],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_9ada9d024e58446a04bfd956ebf19e5b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "dog", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_f1623d355e7ff54871ca302b3c8a6fd3.setIcon(icon_9ada9d024e58446a04bfd956ebf19e5b);
+        
+    
+            marker_f1623d355e7ff54871ca302b3c8a6fd3.bindTooltip(
+                `<div>
+                     Parque Camino Santiago
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_63bb14e46a18a7589276896ee567ccf7 = L.marker(
+                [43.352567, -5.909411],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_e30161077bf60b07d6c22d0f6c40dc66 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "dog", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_63bb14e46a18a7589276896ee567ccf7.setIcon(icon_e30161077bf60b07d6c22d0f6c40dc66);
+        
+    
+            marker_63bb14e46a18a7589276896ee567ccf7.bindTooltip(
+                `<div>
+                     Ovican
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dee4ce5a70f1df003b4f22e261af6622 = L.marker(
+                [43.366786, -5.843365],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_f162da45ce084dc437d29c8017eb17e3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "green", "markerColor": "white", "prefix": "fa"}
+            );
+            marker_dee4ce5a70f1df003b4f22e261af6622.setIcon(icon_f162da45ce084dc437d29c8017eb17e3);
+        
+    
+            marker_dee4ce5a70f1df003b4f22e261af6622.bindTooltip(
+                `<div>
+                     El Arbola Restaurante Ecológico
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c756bb23da6cfba0916c72d688c368d8 = L.marker(
+                [43.364274, -5.841576],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_895449e4ed2cc60f3b3eec4f40a42c0c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "green", "markerColor": "white", "prefix": "fa"}
+            );
+            marker_c756bb23da6cfba0916c72d688c368d8.setIcon(icon_895449e4ed2cc60f3b3eec4f40a42c0c);
+        
+    
+            marker_c756bb23da6cfba0916c72d688c368d8.bindTooltip(
+                `<div>
+                     Manglar
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e003b3a7f757bc5d25c496608c0183be = L.marker(
+                [43.35432, -5.840289],
+                {}
+            ).addTo(map_ed884ca8d682a959c6fa97e4b933e780);
+        
+    
+            var icon_0f211f372da4566905d0e16948b53736 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "green", "markerColor": "white", "prefix": "fa"}
+            );
+            marker_e003b3a7f757bc5d25c496608c0183be.setIcon(icon_0f211f372da4566905d0e16948b53736);
+        
+    
+            marker_e003b3a7f757bc5d25c496608c0183be.bindTooltip(
+                `<div>
+                     Lata de Zinc
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

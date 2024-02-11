@@ -18,6 +18,8 @@ You recently created a new company in the `GAMING industry`. The company will ha
 - 1 Maintenance guy that loves basketball
 - 10 Executives
 - 1 CEO/President.
+
+  
 ​
 As a data analysts you have asked all the employees to show their preferences on where to place the new office. Your goal is to place the **new company offices** in the best place for the company to grow. You have to find a place that more or less covers all the following requirements (note that **it's impossible to cover all requirements**, so you have to prioritize at your glance):
 ​

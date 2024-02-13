@@ -1,161 +1,82 @@
-# project-III
+# Office Location: 
+
+## Table of Contents:
 
 
 
-VIERNES NOCHE: Funcion que extrae de FourSquare
-                Funcion que guarda en DB que voy a crear
-                Funcion que extrae de DataBase compañias 
+## 1. Introducción:
+
+We’ve been ask to find the perfect location for a gaming company. Para esta tarea tendremos en cuenta distintas prioridades que nos han marcado  desde la dirección de la empresa. 
+
+**Located in Europe**: Prioritizing  location that offers fewer gaming companies nearby, thus presenting a strategic market opportunity while minimizing competitive pressures.
+**Access to talent**: In light of the company's strategic expansion objectives,  the chosen city has to be able to provide a constant flow of talent.
+
+Additionally, they company share with us some relevant information about their employees to helps us with the search:
+
+    - Everyone in the company is between 25 and 40 years old.
+    - The team loves their office dog, "Dobby."
+    - 1 CEO/President, that is vegan.
+    - 1 Maintenance staff member, that loves sports.
+    - 10 Executives love Starbucks A LOT.
+    - 15 Frontend/Backend Developers
+    - 20 Account Managers need to travel a lot.
+    - 20 Designers , appreciate near design enviroments
+
+## 2. Available Resources:
+
+    - Foursquare API
+    - MongoDB - Companies collection
 
 
-SABADO 20:00 -- tener los mini radios definidos -- TODA LA PARTE 1
-DOMINGO -- 
+## 3. Aproach:
+Considering various variables from most to least essential, we will narrow down the area in which we want to locate our company. To do this, we will follow these three steps repeatedly:
 
-
-
-
-For this project we need to find a suitable place to our company. 
-
-In the company there is : 
-
-People want:
-
-----------------------------------  PARTE 1  ---------------------------------------------
-
-- APROACH: Que cumplan todas estas - quiza dentro de cada una podemos decir que umplan 1 o otra 
-
-**MAINTENANCE**
-- 1. buscar los estadios deportes en general 
-     10051	Arts and Entertainment > Stadium
-          
-**DOG PARK**
-    - Dog park
-        16033	Landmarks and Outdoors > Park > Dog Park
-**CEO**
-    - Vegan o X restaurant (Opciones)
-        13377	Dining and Drinking > Restaurant > Vegan and Vegetarian Restaurant
-
-**PARTY**
-
-   10032	Arts and Entertainment > Night Club
-   13003	Dining and Drinking > Bar
-
-
-***METEMOS UN CUANTAS EMPRESAS DE LA DB EMPRESAS HAY AQUI?¿** 
-
---------------------------- PARTE 2 --------------------------------------------------
-
-4. De los hot spots hemos hecho una lista de posibles sitios. 
-
-    - Algo tengo que hacer para generar radios mas pequeños dentro de cada uno de ellos y quiza hacer el analisis aqui en plan o quiza con el de los hot spot ya esta - a esto datle una vuelta 
-
-5. Con mis X radios ya mas pequeñitos - estraer todos los (de abajo) para cada uno de los puntos: 
-
-    veremos cuantos de cada hay en cada sector -- generamos un mapa de calor
-    
-    - Companies Data base: 
-    
-          - Design Companies 
-          - Tech startups raised at least 1M
-          
-    - API FourSquare: 
-    
-           - Airpot or Trainstation
-           - Starbuks near 
-           
-           
-6. Seleccionamos 1 y justificamos
-
-Si te quieres poner super creativa - como ultimo cirterio hacer un mapa de SOL y la decision definitiva sera el que tenga mas areas de sol 
-
-
-1. Extraer la informacion que queremos de Foursquare - crear una funcion que la extraiga
-  - Extraer todos los estadios de basket --> analizar que campos
-2. Crear una funcion que los meta en Mongo
-
-3. Extraer todos los MUST a partir de 
-
-
-
---------PARTE 1 un poco liosa --------------------------------------------
-
-Fist we have identify the conditions that MUST. The Indispensable ones: 
-
--  basketball stadium < 10 km
--  At least 1 vegan restaurant? change to other food? sushi? 
--  Somethig for a Dog - una carniceria? - 
--  At least one party club 
-
-Fist we will filter locations that meet all 4 
-
-- Encontrar areas que cumplan estos 4 criterios en un radio de X . Como el estadio de basket es el mas restictivo quiza podemos empezar por 
-
-- 1. Encontrar estadios de basket, a partir de ahi en un radio de 10km que esten los otros tres 
-
-- Find all -- basket stadiums - point del basket stadium - to list o to iterable
-- for all elements in the iterable list of basket stadiums - check if in a circle of 10k of this point there is :
-
-
-
-    *Keep in mind that i only have X requests for FourSquare so i nedd to think what do i really need so may be is beter no limit the busqueda to a given area/city
-    
-    
-    ** TAMBIEN va a ser imporante guardar toda la info que cojamos de foursquares para asi luego referirnis a la base de datos en lugar de hacer requests a la API, la cosa es primero determinar que vamos a pedir y luego como y como guardarlas 
-    
-    Lo de mirar el link que decia leo es buena, bueno no se para que sirve pero lo veremos 
-    
-    - We are limiting the busqueda to X City/Country? 
-    Quiza podemos limitar la busqueda despues de esto: 
-    
-    Empezamos con estadios porque es de lo que menos hay 
-
-First dorm FourSquares 
-
-    - Buscar (TODOS?) los estadios? y descargarlos? cuidado-- quiza hay que limitar 
-
-    1. Find Baskeball stadiums - grupo de estadios - Tenemos una lista de estadios
-    
-        10061	Arts and Entertainment > Stadium > Basketball Stadium
-        
-    2. Por cada punto de estados vamos a definir un radio de 10km donde donde miraremos si estan estas tres condiciones: 
-    
-    SACAME de este punto con radio X todos los --- vegano 
-    
-    2. Por cada punto de estadios, chekea si --> Tienen las tres condiciones. la cosa es como quremos los 3 puntos que esten de cerca? Como sacamos la info para luego ir analizandola? 
-    
-   **España**
-
-Quiza no hay que generar los espacios como tal sino simplementemente ir a four square y en la busqueda pedir con este punto [El estadio] a un ratio de X km buscame ---
-             
-DRAMA: No quiero solo que haya estas tres cosas sino que estas tres cosas no esten locamente separadas, quiero decir que si cada cosa esta en una punta luego no podre decir que lo tienen cerca - bueno a ver si que puedo pero no se yo... 
-            
-    
-    - Condition1 and Condition2 and Condition 3
- 
- If they evaluate to true -- save them into SUITABLE if not - nothing (fuera ) 
- 
- Form our SUITABLE selecction:
- 
- For remaining company employees: 
- 
-     - 25% [Designers] --> Other Design Companies 
-     - 25% [A.M] --> Need to travel (Airpot or Trainstation)
-     - 18% [Data Analist] --> Nothing? 
-     - 18% [Developers Front/Back] --> tech startups raised at least 1M
-     - 13% [Executives] --> Starbuks near 
-     
-HOW we are gona meet this conditions : 
-
-    - Companies Data base: 
-    
-          - Design Companies 
-          - Tech startups raised at least 1M
-          
-    - API FourSquare: 
-    
-           - Airpot or Trainstation
-           - Starbuks near 
+    - Extract
+    - Describe
+    - Analize
 
 
 
 
-- Hemos encontrado X areas que cumplen estos cuatro criterios 
+## 4. WorkFlow:
+
+
+### 4.1 European Country Exploration: Sector enterprise density
+Extract Gaming-related companies locations ( fuente: companies collection in Mongo DB)
+Describe: Sector enterprise density (Heat Map)
+Conclusion: Spain as suitable Country
+
+
+### 4.2 Cities exploration:
+Extract university and educational related locations from a forestare API 
+Describe: Educational spots location. Forescuare API 
+Conclusion: An in-depth examination of the educational landscape surrounding Madrid and Valencia is underway.
+
+### 4.3 Comparing Suitable Citys:
+Para profundizar en la búsqueda y ayudarnos a la toma de decision se han considerado tres de los requisitos de los empleados para analizar las dos posibles ciudades. 
+In this case, our focus lies on evaluating amenities such as sports facilities, dog parks, and vegan restaurants.
+
+**MADRID**
+
+
+
+
+**VALENCIA**
+
+
+
+Conclusion
+We see much less density of requirements in Valencia, so it may not be a good idea to continue with this city as a candidate.
+Defining the Neighborhood:
+We have decided that Madrid will be the chosen city, but now we must define in which area/neighborhood of Madrid we want to locate.
+In this case, we will analyze the presence of cafes, nightlife venues, communication zones, and other design companies. to ry to find a suitable spot were mostly of the company employees can have one of their preferred spots near:
+
+
+
+
+
+
+### 5. Selecting the Company:
+To be continued.
+
+

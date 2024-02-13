@@ -2,3 +2,4 @@ notebooks/old
 notebooks/.ipynb_checkpoints
 instructions.md
 .env
+.DS_Store

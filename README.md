@@ -5,12 +5,12 @@
 1. [Introduction](#introduction)
 2. [Available Resources](#available-resources)
 3. [Approach](#approach)
-4. [Workflow] (#workflow)
+4. [Workflow](#workflow)
     - [European Country Exploration: Sector enterprise density](#european-country-exploration-sector-enterprise-density)
     - [Cities Exploration](#cities-exploration)
     - [Comparing Suitable Cities](#comparing-suitable-cities)
     - [Defining the Neighborhood](#defining-the-neighborhood)
-4. [Conclusion](#conclusion)
+5. [Conclusion](#conclusion)
 
 
 
@@ -76,7 +76,7 @@ In this case, our focus lies on evaluating amenities such as sports facilities, 
 ![alt text](images/madrid_maps.png)
 
 
-**VALENCIA** (Tags Map)
+**VALENCIA**
 
 ![alt text](images/valencia_maps.png)
 

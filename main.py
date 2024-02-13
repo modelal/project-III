@@ -60,3 +60,9 @@ heat.heat_map(df, eu_map)
 path = "output/europe_heatmap.html"
 eu_map.save(path)
 os.system(f"open {path}")
+
+#Never finish this, sotty not sorry - you can look the code process in notebooks
+
+# 2. Spain-Univesities
+# 3. Citys-Sport_dogs_vegan
+# 4. Madrid-Spot
